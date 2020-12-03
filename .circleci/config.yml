@@ -26,4 +26,4 @@ jobs:
           command: 'apt-get install -y libreadline-dev zlib1g-dev bison flex'
       - run:
           name: Start building
-          command: 'cd ./glibc && ./configure --prefix=/usr && make -j $(nproc)'
+          command: 'mkdir build && cd ./build && ../glibc/configure --prefix=/usr && make -j $(nproc)'
