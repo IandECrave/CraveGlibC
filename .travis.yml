@@ -12,4 +12,4 @@ script:
     - mkdir glibc-build
     - cd glibc-build
     - ../glibc/configure --prefix=/usr
-    - make -j $(nproc) -k > build.log
+    - make -j $(nproc)
